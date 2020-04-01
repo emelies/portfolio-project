@@ -7,7 +7,7 @@ const StoryblokClient = require("storyblok-js-client");
 connected to our Storyblok account and space.
 Please replace this accessToken with your own one.*/
 const Storyblok = new StoryblokClient({
-  accessToken: "OBCGnuWcPLkbqMpUi7oSbQtt",
+  accessToken: "TLZbabUrnGsrAaHDzMrUKwtt",
   cache: {
     clear: "auto",
     type: "memory"
@@ -41,6 +41,9 @@ export default async (req, res) => {
         }
       } = response; /* Same as: const content = data.story.content */
       const data = { content };
+
+      console.log(content);
+
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
       res.end(JSON.stringify(data));

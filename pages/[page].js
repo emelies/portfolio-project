@@ -9,6 +9,7 @@ import DefaultLayout from "../components/layouts/DefaultLayout";
 /* components */
 import HeadlineModule from "../components/modules/HeadlineModule";
 import ParagraphModule from "../components/modules/ParagraphModule";
+import ImageModule from "../components/modules/ImageModule";
 
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
@@ -19,16 +20,30 @@ function fetchUrl(url) {
 the url and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
   const { content } = data;
-  console.log(`🌈 I am getting this content from Storybok`);
-  console.log(content);
   const codeString = JSON.stringify(content);
   /* Now you need to map your own components, I just left the headline module as reference */
+
+  const headlineModuleData = content.body.find(
+    item => item.component === "Headline Module"
+  );
+  const imageModuleData = content.body.find(
+    item => item.component === "Image Module"
+  );
+  const paragraphModuleData = content.body.find(
+    item => item.component === "Paragraph Module"
+  );
+
   return (
     <DefaultLayout>
-      <h3>🌈 This is what you are getting back from Storyblok: 🌈</h3>
-      <p>{codeString}</p>
-      {/* {headlineModuleData ? <HeadlineModule title={headlineModuleData.title} /> : null} */}
+      {/* <h3>🌈 This is what you are getting back from Storyblok: 🌈</h3>
+      <p>{codeString}</p> */}
+      {headlineModuleData ? (
+        <HeadlineModule title={headlineModuleData.text} />
+      ) : null}
+      {imageModuleData ? <ImageModule image={imageModuleData.image} /> : null}
+      {paragraphModuleData ? <ParagraphModule copy={paragraphModuleData.copy} /> : null}
     </DefaultLayout>
+  
   );
 };
 
