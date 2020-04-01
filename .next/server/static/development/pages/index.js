@@ -303,21 +303,21 @@ const NavbarModule = ({
       lineNumber: 8
     },
     __self: undefined
-  }, "HOME"), __jsx("a", {
+  }, "HOME /"), __jsx("a", {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: undefined
-  }, "ABOUT"), __jsx("a", {
+  }, " ABOUT /"), __jsx("a", {
     href: "/projects",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: undefined
-  }, "PROJECTS"));
+  }, " PROJECTS"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavbarModule);
