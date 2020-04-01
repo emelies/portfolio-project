@@ -30,11 +30,14 @@ const SlugPage = ({ data }) => {
   const paragraphModuleData = content.body.find(
     item => item.component === 'Paragraph Module'
   );
+  const navbarModuleData = content.body.find(
+    item => item.component === 'Navbar Module'
+  );
 
   return (
     <DefaultLayout>
 
-{headlineModuleData ? (
+      {headlineModuleData ? (
         <HeadlineModule title={headlineModuleData.text} />
       ) : null}
 
@@ -44,6 +47,10 @@ const SlugPage = ({ data }) => {
 
       {paragraphModuleData ? (
         <ParagraphModule copy={paragraphModuleData.copy} />
+      ) : null}   
+
+      {navbarModuleData ? (
+        <NavbarModule link={paragraphModuleData.link} />
       ) : null}
 
     </DefaultLayout>

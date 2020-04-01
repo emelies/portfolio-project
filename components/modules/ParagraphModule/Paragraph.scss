@@ -1,4 +1,7 @@
-.root {
-	padding: 6% 12%;
-	text-align: left;
+@import 'components/main.scss';
+
+.text {
+	text-align: center;
+	color: white;
+	font-size: 2em;
 }

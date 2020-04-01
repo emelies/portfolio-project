@@ -17,9 +17,9 @@
 html,
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
   letter-spacing: 0.1rem;
-  background-color: #4f0f5f; }
+  background-color: #42093f; }
 
 a:link {
   text-decoration: none;
@@ -152,18 +152,44 @@ table {
 html,
 body {
   margin: 0;
-  background-color: #4f0f5f; }
+  background-color: #42093f; }
 
 * {
   box-sizing: border-box; }
 
-.title___2_B4Q {
-  font-family: "Pathway Gothic One", sans-serif;
+.link___397rl {
   text-align: center; }
 
-.root___3xjFP {
-  padding: 6% 12%;
-  text-align: left; }
+html,
+body {
+  margin: 0;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: #42093f; }
+
+a:link {
+  text-decoration: none;
+  color: white; }
+
+.title___2_B4Q {
+  text-align: center;
+  padding: 30px; }
+
+html,
+body {
+  margin: 0;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: #42093f; }
+
+a:link {
+  text-decoration: none;
+  color: white; }
+
+.text___3wara {
+  text-align: center;
+  color: white;
+  font-size: 2em; }
 
 img {
   width: 600px;

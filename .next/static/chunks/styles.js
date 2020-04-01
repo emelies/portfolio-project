@@ -30,7 +30,7 @@ module.exports = {"root":"root___3GKdN","pageWrapper":"pageWrapper___14rma"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1585742003748");
+            injectCss(link, link.href.split("?")[0] + "?unix=1585744467196");
           });
       }
     }
@@ -67,7 +67,7 @@ module.exports = {"root":"root___3GKdN","pageWrapper":"pageWrapper___14rma"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1585742003765");
+            injectCss(link, link.href.split("?")[0] + "?unix=1585744467266");
           });
       }
     }
@@ -105,7 +105,7 @@ module.exports = {"title":"title___2_B4Q"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1585742757069");
+            injectCss(link, link.href.split("?")[0] + "?unix=1585759310181");
           });
       }
     }
@@ -143,7 +143,7 @@ module.exports = {"container":"container___1bqPr"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1585742943271");
+            injectCss(link, link.href.split("?")[0] + "?unix=1585744467280");
           });
       }
     }
@@ -151,15 +151,15 @@ module.exports = {"container":"container___1bqPr"};;
 
 /***/ }),
 
-/***/ "./components/modules/ParagraphModule/Paragraph.scss":
-/*!***********************************************************!*\
-  !*** ./components/modules/ParagraphModule/Paragraph.scss ***!
-  \***********************************************************/
+/***/ "./components/modules/NavbarModule/Navbar.scss":
+/*!*****************************************************!*\
+  !*** ./components/modules/NavbarModule/Navbar.scss ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"root":"root___3xjFP"};;
+module.exports = {"link":"link___397rl"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -181,7 +181,45 @@ module.exports = {"root":"root___3xjFP"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1585742003735");
+            injectCss(link, link.href.split("?")[0] + "?unix=1585746624155");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./components/modules/ParagraphModule/Paragraph.scss":
+/*!***********************************************************!*\
+  !*** ./components/modules/ParagraphModule/Paragraph.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"text":"text___3wara"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1585744467245");
           });
       }
     }

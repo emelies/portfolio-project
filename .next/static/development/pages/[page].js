@@ -98,7 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styleReset.scss */ "./components/layouts/DefaultLayout/styleReset.scss");
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
+/* harmony import */ var _modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../modules/NavbarModule/Navbar */ "./components/modules/NavbarModule/Navbar.jsx");
+/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
 var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/layouts/DefaultLayout/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -106,33 +107,40 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /* styles */
 
 
+
 /* components */
 
 
 
 var DefaultLayout = function DefaultLayout(props) {
-  var title = 'Portfolio';
-  var description = 'Emelie Sabel';
+  var title = "Portfolio";
+  var description = "Emelie Sabel";
   return __jsx("div", {
     className: (_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("div", {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.pageWrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
-  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: title,
     description: description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
+    },
+    __self: this
+  }), __jsx(_modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
     },
     __self: this
   }), props.children));
@@ -168,7 +176,7 @@ var HeadlineModule = function HeadlineModule(_ref) {
     className: _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, title);
@@ -219,6 +227,62 @@ var ImageModule = function ImageModule(_ref) {
 
 /***/ }),
 
+/***/ "./components/modules/NavbarModule/Navbar.jsx":
+/*!****************************************************!*\
+  !*** ./components/modules/NavbarModule/Navbar.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.scss */ "./components/modules/NavbarModule/Navbar.scss");
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Navbar_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/NavbarModule/Navbar.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var NavbarModule = function NavbarModule(_ref) {
+  var link = _ref.link;
+  console.log(NavbarModule);
+  return __jsx("div", {
+    className: _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default.a.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "/home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "HOME"), __jsx("a", {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "ABOUT"), __jsx("a", {
+    href: "/projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "PROJECTS"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavbarModule);
+
+/***/ }),
+
 /***/ "./components/modules/ParagraphModule/Paragraph.jsx":
 /*!**********************************************************!*\
   !*** ./components/modules/ParagraphModule/Paragraph.jsx ***!
@@ -243,7 +307,7 @@ var ParagraphModule = function ParagraphModule(_ref) {
   var copy = _ref.copy;
   console.log(ParagraphModule);
   return __jsx("div", {
-    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -4656,31 +4720,41 @@ var SlugPage = function SlugPage(_ref) {
   var paragraphModuleData = content.body.find(function (item) {
     return item.component === 'Paragraph Module';
   });
+  var navbarModuleData = content.body.find(function (item) {
+    return item.component === 'Navbar Module';
+  });
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 38
     },
     __self: this
   }, headlineModuleData ? __jsx(_components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 41
     },
     __self: this
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     },
     __self: this
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
+    },
+    __self: this
+  }) : null, navbarModuleData ? __jsx(NavbarModule, {
+    link: paragraphModuleData.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }) : null);
@@ -4724,7 +4798,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2F%5Bpage%5D.js ***!
   \*********************************************************************************************************************************************************************************/
@@ -4747,5 +4821,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

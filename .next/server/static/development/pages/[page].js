@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styleReset.scss */ "./components/layouts/DefaultLayout/styleReset.scss");
 /* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
+/* harmony import */ var _modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../modules/NavbarModule/Navbar */ "./components/modules/NavbarModule/Navbar.jsx");
+/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
 var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/layouts/DefaultLayout/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -198,33 +199,40 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /* styles */
 
 
+
 /* components */
 
 
 
 const DefaultLayout = props => {
-  const title = 'Portfolio';
-  const description = 'Emelie Sabel';
+  const title = "Portfolio";
+  const description = "Emelie Sabel";
   return __jsx("div", {
     className: (_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("div", {
     className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.pageWrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
-  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: title,
     description: description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
+    },
+    __self: undefined
+  }), __jsx(_modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
     },
     __self: undefined
   }), props.children));
@@ -286,7 +294,7 @@ const HeadlineModule = ({
     className: _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: undefined
   }, title);
@@ -364,6 +372,76 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./components/modules/NavbarModule/Navbar.jsx":
+/*!****************************************************!*\
+  !*** ./components/modules/NavbarModule/Navbar.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.scss */ "./components/modules/NavbarModule/Navbar.scss");
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Navbar_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/NavbarModule/Navbar.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const NavbarModule = ({
+  link
+}) => {
+  console.log(NavbarModule);
+  return __jsx("div", {
+    className: _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default.a.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "/home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "HOME"), __jsx("a", {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, "ABOUT"), __jsx("a", {
+    href: "/projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, "PROJECTS"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavbarModule);
+
+/***/ }),
+
+/***/ "./components/modules/NavbarModule/Navbar.scss":
+/*!*****************************************************!*\
+  !*** ./components/modules/NavbarModule/Navbar.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"link": "link___397rl"
+};
+
+/***/ }),
+
 /***/ "./components/modules/ParagraphModule/Paragraph.jsx":
 /*!**********************************************************!*\
   !*** ./components/modules/ParagraphModule/Paragraph.jsx ***!
@@ -389,7 +467,7 @@ const ParagraphModule = ({
 }) => {
   console.log(ParagraphModule);
   return __jsx("div", {
-    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -416,7 +494,7 @@ const ParagraphModule = ({
 /***/ (function(module, exports) {
 
 module.exports = {
-	"root": "root___3xjFP"
+	"text": "text___3wara"
 };
 
 /***/ }),
@@ -472,31 +550,39 @@ const SlugPage = ({
   const headlineModuleData = content.body.find(item => item.component === 'Headline Module');
   const imageModuleData = content.body.find(item => item.component === 'Image Module');
   const paragraphModuleData = content.body.find(item => item.component === 'Paragraph Module');
+  const navbarModuleData = content.body.find(item => item.component === 'Navbar Module');
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 38
     },
     __self: undefined
   }, headlineModuleData ? __jsx(_components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 41
     },
     __self: undefined
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     },
     __self: undefined
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
+    },
+    __self: undefined
+  }) : null, navbarModuleData ? __jsx(NavbarModule, {
+    link: paragraphModuleData.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: undefined
   }) : null);
@@ -529,7 +615,7 @@ SlugPage.getInitialProps = async ({
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/[page].js ***!
   \*******************************/

@@ -4,8 +4,8 @@ import DefaultLayout from "../components/layouts/DefaultLayout";
 const DefaultPage = () => {
   return (
     <DefaultLayout>
-      <h1>Default Page</h1>
-      <a href="/home">->Visit a Slug Page</a>
+      <h1>FRONT END DEVELOPER AND DESIGNER</h1>
+      
     </DefaultLayout>
   );
 };
