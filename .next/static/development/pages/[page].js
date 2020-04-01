@@ -111,8 +111,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var DefaultLayout = function DefaultLayout(props) {
-  var title = 'Hyper Island FED21';
-  var description = 'Kick-off template for FED21 students';
+  var title = 'Portfolio';
+  var description = 'Emelie Sabel';
   return __jsx("div", {
     className: (_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
     __source: {
@@ -142,10 +142,10 @@ var DefaultLayout = function DefaultLayout(props) {
 
 /***/ }),
 
-/***/ "./components/modules/HeadlineModule/index.jsx":
-/*!*****************************************************!*\
-  !*** ./components/modules/HeadlineModule/index.jsx ***!
-  \*****************************************************/
+/***/ "./components/modules/HeadlineModule/Headline.jsx":
+/*!********************************************************!*\
+  !*** ./components/modules/HeadlineModule/Headline.jsx ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -153,9 +153,9 @@ var DefaultLayout = function DefaultLayout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/HeadlineModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/HeadlineModule/index.jsx";
+/* harmony import */ var _Headline_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Headline.scss */ "./components/modules/HeadlineModule/Headline.scss");
+/* harmony import */ var _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Headline_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/HeadlineModule/Headline.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -165,7 +165,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var HeadlineModule = function HeadlineModule(_ref) {
   var title = _ref.title;
   return __jsx("h1", {
-    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -178,9 +178,9 @@ var HeadlineModule = function HeadlineModule(_ref) {
 
 /***/ }),
 
-/***/ "./components/modules/ImageModule/index.jsx":
+/***/ "./components/modules/ImageModule/Image.jsx":
 /*!**************************************************!*\
-  !*** ./components/modules/ImageModule/index.jsx ***!
+  !*** ./components/modules/ImageModule/Image.jsx ***!
   \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -189,9 +189,9 @@ var HeadlineModule = function HeadlineModule(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ImageModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ImageModule/index.jsx";
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Image.scss */ "./components/modules/ImageModule/Image.scss");
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Image_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ImageModule/Image.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -199,13 +199,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var ImageModule = function ImageModule(_ref) {
   var image = _ref.image;
   return __jsx("div", {
+    className: _Image_scss__WEBPACK_IMPORTED_MODULE_1___default.a.container,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
   }, __jsx("img", {
-    className: "img",
     src: image,
     __source: {
       fileName: _jsxFileName,
@@ -219,10 +219,10 @@ var ImageModule = function ImageModule(_ref) {
 
 /***/ }),
 
-/***/ "./components/modules/ParagraphModule/index.jsx":
-/*!******************************************************!*\
-  !*** ./components/modules/ParagraphModule/index.jsx ***!
-  \******************************************************/
+/***/ "./components/modules/ParagraphModule/Paragraph.jsx":
+/*!**********************************************************!*\
+  !*** ./components/modules/ParagraphModule/Paragraph.jsx ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -230,9 +230,9 @@ var ImageModule = function ImageModule(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ParagraphModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ParagraphModule/index.jsx";
+/* harmony import */ var _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Paragraph.scss */ "./components/modules/ParagraphModule/Paragraph.scss");
+/* harmony import */ var _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Paragraph_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ParagraphModule/Paragraph.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -243,7 +243,7 @@ var ParagraphModule = function ParagraphModule(_ref) {
   var copy = _ref.copy;
   console.log(ParagraphModule);
   return __jsx("div", {
-    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -4610,9 +4610,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
-/* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
-/* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
-/* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
+/* harmony import */ var _components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/HeadlineModule/Headline */ "./components/modules/HeadlineModule/Headline.jsx");
+/* harmony import */ var _components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/modules/ParagraphModule/Paragraph */ "./components/modules/ParagraphModule/Paragraph.jsx");
+/* harmony import */ var _components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/modules/ImageModule/Image */ "./components/modules/ImageModule/Image.jsx");
 
 
 var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/pages/[page].js";
@@ -4631,7 +4631,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-/* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 
 function fetchUrl(url) {
   return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(url).then(function (r) {
@@ -4647,43 +4646,41 @@ var SlugPage = function SlugPage(_ref) {
   var content = data.content;
 
   var codeString = _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(content);
-  /* Now you need to map your own components, I just left the headline module as reference */
-
 
   var headlineModuleData = content.body.find(function (item) {
-    return item.component === "Headline Module";
+    return item.component === 'Headline Module';
   });
   var imageModuleData = content.body.find(function (item) {
-    return item.component === "Image Module";
+    return item.component === 'Image Module';
   });
   var paragraphModuleData = content.body.find(function (item) {
-    return item.component === "Paragraph Module";
+    return item.component === 'Paragraph Module';
   });
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: this
-  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_5__["default"], {
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: this
-  }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
-  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 46
     },
     __self: this
   }) : null);
@@ -4727,7 +4724,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!*********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2F%5Bpage%5D.js ***!
   \*********************************************************************************************************************************************************************************/
@@ -4750,5 +4747,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

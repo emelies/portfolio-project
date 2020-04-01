@@ -203,8 +203,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const DefaultLayout = props => {
-  const title = 'Hyper Island FED21';
-  const description = 'Kick-off template for FED21 students';
+  const title = 'Portfolio';
+  const description = 'Emelie Sabel';
   return __jsx("div", {
     className: (_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
     __source: {
@@ -259,10 +259,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./components/modules/HeadlineModule/index.jsx":
-/*!*****************************************************!*\
-  !*** ./components/modules/HeadlineModule/index.jsx ***!
-  \*****************************************************/
+/***/ "./components/modules/HeadlineModule/Headline.jsx":
+/*!********************************************************!*\
+  !*** ./components/modules/HeadlineModule/Headline.jsx ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -270,9 +270,9 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/HeadlineModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/HeadlineModule/index.jsx";
+/* harmony import */ var _Headline_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Headline.scss */ "./components/modules/HeadlineModule/Headline.scss");
+/* harmony import */ var _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Headline_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/HeadlineModule/Headline.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -283,7 +283,7 @@ const HeadlineModule = ({
   title
 }) => {
   return __jsx("h1", {
-    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -296,22 +296,22 @@ const HeadlineModule = ({
 
 /***/ }),
 
-/***/ "./components/modules/HeadlineModule/index.scss":
-/*!******************************************************!*\
-  !*** ./components/modules/HeadlineModule/index.scss ***!
-  \******************************************************/
+/***/ "./components/modules/HeadlineModule/Headline.scss":
+/*!*********************************************************!*\
+  !*** ./components/modules/HeadlineModule/Headline.scss ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"root": "root___1dRZh"
+	"title": "title___2_B4Q"
 };
 
 /***/ }),
 
-/***/ "./components/modules/ImageModule/index.jsx":
+/***/ "./components/modules/ImageModule/Image.jsx":
 /*!**************************************************!*\
-  !*** ./components/modules/ImageModule/index.jsx ***!
+  !*** ./components/modules/ImageModule/Image.jsx ***!
   \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -320,9 +320,9 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ImageModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ImageModule/index.jsx";
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Image.scss */ "./components/modules/ImageModule/Image.scss");
+/* harmony import */ var _Image_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Image_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ImageModule/Image.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -331,13 +331,13 @@ const ImageModule = ({
   image
 }) => {
   return __jsx("div", {
+    className: _Image_scss__WEBPACK_IMPORTED_MODULE_1___default.a.container,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: undefined
   }, __jsx("img", {
-    className: "img",
     src: image,
     __source: {
       fileName: _jsxFileName,
@@ -351,21 +351,23 @@ const ImageModule = ({
 
 /***/ }),
 
-/***/ "./components/modules/ImageModule/index.scss":
+/***/ "./components/modules/ImageModule/Image.scss":
 /*!***************************************************!*\
-  !*** ./components/modules/ImageModule/index.scss ***!
+  !*** ./components/modules/ImageModule/Image.scss ***!
   \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+module.exports = {
+	"container": "container___1bqPr"
+};
 
 /***/ }),
 
-/***/ "./components/modules/ParagraphModule/index.jsx":
-/*!******************************************************!*\
-  !*** ./components/modules/ParagraphModule/index.jsx ***!
-  \******************************************************/
+/***/ "./components/modules/ParagraphModule/Paragraph.jsx":
+/*!**********************************************************!*\
+  !*** ./components/modules/ParagraphModule/Paragraph.jsx ***!
+  \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -373,9 +375,9 @@ const ImageModule = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/modules/ParagraphModule/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ParagraphModule/index.jsx";
+/* harmony import */ var _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Paragraph.scss */ "./components/modules/ParagraphModule/Paragraph.scss");
+/* harmony import */ var _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Paragraph_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/ParagraphModule/Paragraph.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -387,7 +389,7 @@ const ParagraphModule = ({
 }) => {
   console.log(ParagraphModule);
   return __jsx("div", {
-    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
+    className: _Paragraph_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -406,15 +408,15 @@ const ParagraphModule = ({
 
 /***/ }),
 
-/***/ "./components/modules/ParagraphModule/index.scss":
-/*!*******************************************************!*\
-  !*** ./components/modules/ParagraphModule/index.scss ***!
-  \*******************************************************/
+/***/ "./components/modules/ParagraphModule/Paragraph.scss":
+/*!***********************************************************!*\
+  !*** ./components/modules/ParagraphModule/Paragraph.scss ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"root": "root___6SFYA"
+	"root": "root___3xjFP"
 };
 
 /***/ }),
@@ -433,9 +435,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
-/* harmony import */ var _components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/modules/HeadlineModule */ "./components/modules/HeadlineModule/index.jsx");
-/* harmony import */ var _components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/modules/ParagraphModule */ "./components/modules/ParagraphModule/index.jsx");
-/* harmony import */ var _components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/ImageModule */ "./components/modules/ImageModule/index.jsx");
+/* harmony import */ var _components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/modules/HeadlineModule/Headline */ "./components/modules/HeadlineModule/Headline.jsx");
+/* harmony import */ var _components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/modules/ParagraphModule/Paragraph */ "./components/modules/ParagraphModule/Paragraph.jsx");
+/* harmony import */ var _components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/modules/ImageModule/Image */ "./components/modules/ImageModule/Image.jsx");
 var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/pages/[page].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -452,7 +454,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-/* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 
 function fetchUrl(url) {
   return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(url).then(r => r.json());
@@ -468,36 +469,34 @@ const SlugPage = ({
     content
   } = data;
   const codeString = JSON.stringify(content);
-  /* Now you need to map your own components, I just left the headline module as reference */
-
-  const headlineModuleData = content.body.find(item => item.component === "Headline Module");
-  const imageModuleData = content.body.find(item => item.component === "Image Module");
-  const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
+  const headlineModuleData = content.body.find(item => item.component === 'Headline Module');
+  const imageModuleData = content.body.find(item => item.component === 'Image Module');
+  const paragraphModuleData = content.body.find(item => item.component === 'Paragraph Module');
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 35
     },
     __self: undefined
-  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, headlineModuleData ? __jsx(_components_modules_HeadlineModule_Headline__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     },
     __self: undefined
-  }) : null, imageModuleData ? __jsx(_components_modules_ImageModule__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: undefined
-  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 46
     },
     __self: undefined
   }) : null);

@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
   */
+@import 'components/main.scss';
 html,
 body,
 div,
@@ -130,7 +131,9 @@ table {
 html,
 body {
 	margin: 0;
+	background-color: $color-background;
 }
 * {
 	box-sizing: border-box;
 }
+

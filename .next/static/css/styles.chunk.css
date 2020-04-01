@@ -1,7 +1,7 @@
 .root___3GKdN h1 {
   font-size: 32px;
-  font-family: 'Poppins', sans-serif;
-  color: blue;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: white;
   padding-bottom: 18px; }
 
 .pageWrapper___14rma {
@@ -14,6 +14,17 @@
    v2.0 | 20110126
    License: none (public domain)
   */
+html,
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1rem;
+  background-color: #4f0f5f; }
+
+a:link {
+  text-decoration: none;
+  color: white; }
+
 html,
 body,
 div,
@@ -140,19 +151,31 @@ table {
 
 html,
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #4f0f5f; }
 
 * {
   box-sizing: border-box; }
 
-.root___1dRZh {
-  font-size: 32px;
-  text-align: right; }
+.title___2_B4Q {
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center; }
 
-.root___6SFYA {
+.root___3xjFP {
   padding: 6% 12%;
   text-align: left; }
 
+img {
+  width: 600px;
+  height: 100%;
+  border-radius: 50%; }
+
+.container___1bqPr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

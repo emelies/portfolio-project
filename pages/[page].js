@@ -7,11 +7,10 @@ import fetch from "isomorphic-unfetch";
 import DefaultLayout from "../components/layouts/DefaultLayout";
 
 /* components */
-import HeadlineModule from "../components/modules/HeadlineModule";
-import ParagraphModule from "../components/modules/ParagraphModule";
-import ImageModule from "../components/modules/ImageModule";
+import HeadlineModule from "../components/modules/HeadlineModule/Headline";
+import ParagraphModule from "../components/modules/ParagraphModule/Paragraph";
+import ImageModule from "../components/modules/ImageModule/Image";
 
-/* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
   return fetch(url).then(r => r.json());
 }
@@ -21,29 +20,34 @@ the url and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
   const { content } = data;
   const codeString = JSON.stringify(content);
-  /* Now you need to map your own components, I just left the headline module as reference */
 
   const headlineModuleData = content.body.find(
-    item => item.component === "Headline Module"
-  );
+		item => item.component === 'Headline Module'
+	);
   const imageModuleData = content.body.find(
-    item => item.component === "Image Module"
+    item => item.component === 'Image Module'
   );
   const paragraphModuleData = content.body.find(
-    item => item.component === "Paragraph Module"
+    item => item.component === 'Paragraph Module'
   );
 
   return (
     <DefaultLayout>
-      {/* <h3>🌈 This is what you are getting back from Storyblok: 🌈</h3>
-      <p>{codeString}</p> */}
-      {headlineModuleData ? (
+
+{headlineModuleData ? (
         <HeadlineModule title={headlineModuleData.text} />
       ) : null}
-      {imageModuleData ? <ImageModule image={imageModuleData.image} /> : null}
-      {paragraphModuleData ? <ParagraphModule copy={paragraphModuleData.copy} /> : null}
+
+      {imageModuleData ? ( 
+      <ImageModule image={imageModuleData.image} /> 
+      ) : null}
+
+      {paragraphModuleData ? (
+        <ParagraphModule copy={paragraphModuleData.copy} />
+      ) : null}
+
     </DefaultLayout>
-  
+
   );
 };
 
