@@ -203,7 +203,7 @@ a:link {
   font-size: 2em; }
 
 img {
-  width: 600px;
+  width: 700px;
   height: 100%;
   border-radius: 50%; }
 
@@ -212,7 +212,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px; }
+  padding: 50px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
