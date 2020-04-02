@@ -547,10 +547,10 @@ const SlugPage = ({
     content
   } = data;
   const codeString = JSON.stringify(content);
-  const headlineModuleData = content.body.find(item => item.component === 'Headline Module');
-  const imageModuleData = content.body.find(item => item.component === 'Image Module');
-  const paragraphModuleData = content.body.find(item => item.component === 'Paragraph Module');
-  const navbarModuleData = content.body.find(item => item.component === 'Navbar Module');
+  const headlineModuleData = content.body.find(item => item.component === "Headline Module");
+  const imageModuleData = content.body.find(item => item.component === "Image Module");
+  const paragraphModuleData = content.body.find(item => item.component === "Paragraph Module");
+  const navbarModuleData = content.body.find(item => item.component === "Navbar Module");
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -561,28 +561,28 @@ const SlugPage = ({
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: undefined
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: undefined
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 46
     },
     __self: undefined
   }) : null, navbarModuleData ? __jsx(NavbarModule, {
     link: paragraphModuleData.link,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 50
     },
     __self: undefined
   }) : null);
@@ -602,7 +602,7 @@ SlugPage.getInitialProps = async ({
   /* Calling our internal api endpoint so that we can fetch Storyblok content
   server-side (we are on client-side here) */
 
-  const data = await fetchUrl(`http://localhost:3000/api/page/${page}`);
+  const data = await fetchUrl(`https://portfolio-project-sigma.now.sh/api/page/${page}`);
   /* Returning the data back into SlugPage as props */
 
   return {

@@ -22,39 +22,34 @@ const SlugPage = ({ data }) => {
   const codeString = JSON.stringify(content);
 
   const headlineModuleData = content.body.find(
-		item => item.component === 'Headline Module'
-	);
+    item => item.component === "Headline Module"
+  );
   const imageModuleData = content.body.find(
-    item => item.component === 'Image Module'
+    item => item.component === "Image Module"
   );
   const paragraphModuleData = content.body.find(
-    item => item.component === 'Paragraph Module'
+    item => item.component === "Paragraph Module"
   );
   const navbarModuleData = content.body.find(
-    item => item.component === 'Navbar Module'
+    item => item.component === "Navbar Module"
   );
 
   return (
     <DefaultLayout>
-
       {headlineModuleData ? (
         <HeadlineModule title={headlineModuleData.text} />
       ) : null}
 
-      {imageModuleData ? ( 
-      <ImageModule image={imageModuleData.image} /> 
-      ) : null}
+      {imageModuleData ? <ImageModule image={imageModuleData.image} /> : null}
 
       {paragraphModuleData ? (
         <ParagraphModule copy={paragraphModuleData.copy} />
-      ) : null}   
+      ) : null}
 
       {navbarModuleData ? (
         <NavbarModule link={paragraphModuleData.link} />
       ) : null}
-
     </DefaultLayout>
-
   );
 };
 
@@ -66,7 +61,9 @@ SlugPage.getInitialProps = async ({ query }) => {
   const { page } = query;
   /* Calling our internal api endpoint so that we can fetch Storyblok content
 	server-side (we are on client-side here) */
-  const data = await fetchUrl(`http://localhost:3000/api/page/${page}`);
+  const data = await fetchUrl(
+    `https://portfolio-project-sigma.now.sh/api/page/${page}`
+  );
   /* Returning the data back into SlugPage as props */
   return { data }; /* This is the same as { data: data } */
 };

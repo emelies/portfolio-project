@@ -4712,16 +4712,16 @@ var SlugPage = function SlugPage(_ref) {
   var codeString = _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(content);
 
   var headlineModuleData = content.body.find(function (item) {
-    return item.component === 'Headline Module';
+    return item.component === "Headline Module";
   });
   var imageModuleData = content.body.find(function (item) {
-    return item.component === 'Image Module';
+    return item.component === "Image Module";
   });
   var paragraphModuleData = content.body.find(function (item) {
-    return item.component === 'Paragraph Module';
+    return item.component === "Paragraph Module";
   });
   var navbarModuleData = content.body.find(function (item) {
-    return item.component === 'Navbar Module';
+    return item.component === "Navbar Module";
   });
   return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
@@ -4733,28 +4733,28 @@ var SlugPage = function SlugPage(_ref) {
     title: headlineModuleData.text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     },
     __self: this
   }) : null, imageModuleData ? __jsx(_components_modules_ImageModule_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
     image: imageModuleData.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 43
     },
     __self: this
   }) : null, paragraphModuleData ? __jsx(_components_modules_ParagraphModule_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
     copy: paragraphModuleData.copy,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 46
     },
     __self: this
   }) : null, navbarModuleData ? __jsx(NavbarModule, {
     link: paragraphModuleData.link,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 50
     },
     __self: this
   }) : null);
@@ -4778,7 +4778,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
           server-side (we are on client-side here) */
 
           _context.next = 4;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetchUrl("http://localhost:3000/api/page/".concat(page)));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetchUrl("https://portfolio-project-sigma.now.sh/api/page/".concat(page)));
 
         case 4:
           data = _context.sent;
