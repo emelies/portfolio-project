@@ -252,28 +252,28 @@ var NavbarModule = function NavbarModule(_ref) {
     className: _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default.a.link,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("a", {
     href: "/home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, "HOME /"), __jsx("a", {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, " ABOUT /"), __jsx("a", {
     href: "/projects",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, " PROJECTS"));
@@ -4798,7 +4798,7 @@ SlugPage.getInitialProps = function _callee(_ref2) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 5:
 /*!*********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F%5Bpage%5D&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2F%5Bpage%5D.js ***!
   \*********************************************************************************************************************************************************************************/
@@ -4821,5 +4821,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[page].js.map

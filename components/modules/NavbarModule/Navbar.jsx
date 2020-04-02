@@ -1,6 +1,5 @@
 import style from "./Navbar.scss";
 
-
 const NavbarModule = ({ link }) => {
   console.log(NavbarModule);
   return (
@@ -13,3 +12,4 @@ const NavbarModule = ({ link }) => {
 };
 
 export default NavbarModule;
+

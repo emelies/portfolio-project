@@ -158,7 +158,15 @@ body {
   box-sizing: border-box; }
 
 .link___397rl {
-  text-align: center; }
+  text-align: center;
+  font-size: 25px;
+  padding: 30px; }
+
+a {
+  color: salmon; }
+
+a:hover {
+  color: #ff3434; }
 
 html,
 body {
