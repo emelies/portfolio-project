@@ -1,3 +1,29 @@
+Emelie Sabel Portfolio Project
+
+Biggest challenges:
+
+- Setting up the environment was very hard. I dint understand the instructions and I really needed step by step instructions. I really did my best and it left me super frustrated and questioned my life choices (haha)
+
+- Getting the storyblock components to show was difficult. I needed help a lot to make this and I'm super grateful for my classmates who took their time to help me get set up.
+
+- Everytime there was a bug that made everything crash was hard. Im not very good at debugging and since I dont understand everything in the code, it was easier to procrastinate when this happened. I got better and better at it, the more things where put together, helped lift my spirits about the project. 
+
+Ps, I really tried to change the font but didnt suceed...lil bummed bout that.
+
+
+Biggest learnings:
+
+- TAKE. TIME. TO. READ! Reading long articles is the slowest way I learn. It takes a lot of focus and willpower in me to stick to a long tech article.. I am becoming better at this, but I would have sat the first week to just read if I did this again.
+
+- Do the tutorials, both storyblock and next.js seperatly before starting my project. I was too eager to get going with the portfolio
+
+- I was good at asking for help, but I could have swallowed some more of my pride and asked more earlier. 
+
+
+ps. These weeks I have had to move out of my appartment and into a house in the woods. This took some time and focus from this project. That and better dicipline and patience would have made me sit down and read and do the tutorials.
+
+////////////////////////////////////////////////////////
+
 # FED21 Data Interaction
 Boilerplate using React, Next.js and Storyblok.
 
@@ -40,3 +66,5 @@ now dev
 ```bash
 now
 ```
+
+

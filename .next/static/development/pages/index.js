@@ -1,4 +1,210 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/next/dist/pages/_error.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+
+/***/ "./components/common/Head/index.jsx":
+/*!******************************************!*\
+  !*** ./components/common/Head/index.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/common/Head/index.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+/* This is the html <header> element which you'll need
+your site to have to comply with web standards.
+This is NOT a visual header */
+
+var Head = function Head(_ref) {
+  var title = _ref.title,
+      description = _ref.description;
+  return __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("meta", {
+    charSet: "UTF-8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, title || ''), __jsx("meta", {
+    name: "description",
+    content: description || '',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), __jsx("meta", {
+    name: "viewport",
+    content: "width=device-width, inititial-scale=1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), __jsx("link", {
+    href: "https://fonts.googleapis.com/css?family=Poppins&display=swap",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "shortcut icon",
+    type: "image/x-icon",
+    href: "/favicon.ico",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Head);
+
+/***/ }),
+
+/***/ "./components/layouts/DefaultLayout/index.js":
+/*!***************************************************!*\
+  !*** ./components/layouts/DefaultLayout/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/layouts/DefaultLayout/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styleReset.scss */ "./components/layouts/DefaultLayout/styleReset.scss");
+/* harmony import */ var _styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styleReset_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../modules/NavbarModule/Navbar */ "./components/modules/NavbarModule/Navbar.jsx");
+/* harmony import */ var _common_Head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/Head */ "./components/common/Head/index.jsx");
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/layouts/DefaultLayout/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* styles */
+
+
+
+/* components */
+
+
+
+var DefaultLayout = function DefaultLayout(props) {
+  var title = "Portfolio";
+  var description = "Emelie Sabel";
+  return __jsx("div", {
+    className: (_styleReset_scss__WEBPACK_IMPORTED_MODULE_2___default.a, _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.root),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx("div", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.pageWrapper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx(_common_Head__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: title,
+    description: description,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), __jsx(_modules_NavbarModule_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), props.children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (DefaultLayout);
+
+/***/ }),
+
+/***/ "./components/modules/NavbarModule/Navbar.jsx":
+/*!****************************************************!*\
+  !*** ./components/modules/NavbarModule/Navbar.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.scss */ "./components/modules/NavbarModule/Navbar.scss");
+/* harmony import */ var _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Navbar_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/components/modules/NavbarModule/Navbar.jsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var NavbarModule = function NavbarModule(_ref) {
+  var link = _ref.link;
+  console.log(NavbarModule);
+  return __jsx("div", {
+    className: _Navbar_scss__WEBPACK_IMPORTED_MODULE_1___default.a.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "/home",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "HOME /"), __jsx("a", {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, " ABOUT /"), __jsx("a", {
+    href: "/projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, " PROJECTS"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavbarModule);
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
@@ -248,23 +454,6 @@ function _inherits(subClass, superClass) {
 }
 
 module.exports = _inherits;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
 
 /***/ }),
 
@@ -3121,21 +3310,21 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js!./":
-/*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
-  \************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2Findex.js!./":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2Findex.js ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/next/dist/pages/_error", function() {
-      var mod = __webpack_require__(/*! ./node_modules/next/dist/pages/_error.js */ "./node_modules/next/dist/pages/_error.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./node_modules/next/dist/pages/_error.js */ "./node_modules/next/dist/pages/_error.js", function() {
-          if(!next.router.components["/next/dist/pages/_error"]) return
-          var updatedPage = __webpack_require__(/*! ./node_modules/next/dist/pages/_error.js */ "./node_modules/next/dist/pages/_error.js")
-          next.router.update("/next/dist/pages/_error", updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -3548,132 +3737,6 @@ exports["default"] = function () {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/pages/_error.js":
-/*!************************************************!*\
-  !*** ./node_modules/next/dist/pages/_error.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _classCallCheck = __webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js");
-
-var _createClass = __webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js");
-
-var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js");
-
-var _getPrototypeOf = __webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js");
-
-var _inherits = __webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js");
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports["default"] = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _head = _interopRequireDefault(__webpack_require__(/*! ../next-server/lib/head */ "./node_modules/next/dist/next-server/lib/head.js"));
-
-var statusCodes = {
-  400: 'Bad Request',
-  404: 'This page could not be found',
-  405: 'Method Not Allowed',
-  500: 'Internal Server Error'
-};
-/**
-* `Error` component used for handling errors.
-*/
-
-var Error =
-/*#__PURE__*/
-function (_react$default$Compon) {
-  _inherits(Error, _react$default$Compon);
-
-  function Error() {
-    _classCallCheck(this, Error);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Error).apply(this, arguments));
-  }
-
-  _createClass(Error, [{
-    key: "render",
-    value: function render() {
-      var statusCode = this.props.statusCode;
-      var title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
-      return _react["default"].createElement("div", {
-        style: styles.error
-      }, _react["default"].createElement(_head["default"], null, _react["default"].createElement("title", null, statusCode, ": ", title)), _react["default"].createElement("div", null, _react["default"].createElement("style", {
-        dangerouslySetInnerHTML: {
-          __html: 'body { margin: 0 }'
-        }
-      }), statusCode ? _react["default"].createElement("h1", {
-        style: styles.h1
-      }, statusCode) : null, _react["default"].createElement("div", {
-        style: styles.desc
-      }, _react["default"].createElement("h2", {
-        style: styles.h2
-      }, title, "."))));
-    }
-  }], [{
-    key: "getInitialProps",
-    value: function getInitialProps(_ref) {
-      var res = _ref.res,
-          err = _ref.err;
-      var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
-      return {
-        statusCode: statusCode
-      };
-    }
-  }]);
-
-  return Error;
-}(_react["default"].Component);
-
-exports["default"] = Error;
-Error.displayName = 'ErrorPage';
-var styles = {
-  error: {
-    color: '#000',
-    background: '#fff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
-    height: '100vh',
-    textAlign: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  desc: {
-    display: 'inline-block',
-    textAlign: 'left',
-    lineHeight: '49px',
-    height: '49px',
-    verticalAlign: 'middle'
-  },
-  h1: {
-    display: 'inline-block',
-    borderRight: '1px solid rgba(0, 0, 0,.3)',
-    margin: 0,
-    marginRight: '20px',
-    padding: '10px 23px 10px 0',
-    fontSize: '24px',
-    fontWeight: 500,
-    verticalAlign: 'top'
-  },
-  h2: {
-    fontSize: '14px',
-    fontWeight: 'normal',
-    lineHeight: 'inherit',
-    margin: 0,
-    padding: 0
-  }
-};
-
-/***/ }),
-
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_ef0ff7c60362f24a921f ***!
@@ -3685,14 +3748,52 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f
 
 /***/ }),
 
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layouts/DefaultLayout */ "./components/layouts/DefaultLayout/index.js");
+var _jsxFileName = "/Users/emeliesabel/Desktop/hyper-island/PROJECTS/portfolio-project/pages/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/* This route gets hit by default, e.g. your-site.com */
+
+var DefaultPage = function DefaultPage() {
+  return __jsx(_components_layouts_DefaultLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "FRONT END DEVELOPER AND DESIGNER"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (DefaultPage);
+
+/***/ }),
+
 /***/ 1:
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Femeliesabel%2FDesktop%2Fhyper-island%2FPROJECTS%2Fportfolio-project%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -3708,5 +3809,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=_error.js.map
+},[[1,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=index.js.map
