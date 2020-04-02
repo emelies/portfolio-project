@@ -120,20 +120,20 @@ const Head = ({
 }) => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 11
   },
   __self: undefined
 }, __jsx("meta", {
   charSet: "UTF-8",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 12
   },
   __self: undefined
 }), __jsx("title", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 13
   },
   __self: undefined
 }, title || ''), __jsx("meta", {
@@ -141,7 +141,7 @@ const Head = ({
   content: description || '',
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 14
   },
   __self: undefined
 }), __jsx("meta", {
@@ -149,7 +149,7 @@ const Head = ({
   content: "width=device-width, inititial-scale=1",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 15
   },
   __self: undefined
 }), __jsx("link", {
@@ -157,7 +157,7 @@ const Head = ({
   rel: "stylesheet",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 16
   },
   __self: undefined
 }), __jsx("link", {
@@ -166,7 +166,7 @@ const Head = ({
   href: "/favicon.ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }));
@@ -290,7 +290,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const HeadlineModule = ({
   title
 }) => {
-  return __jsx("h1", {
+  return __jsx("p", {
     className: _Headline_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title,
     __source: {
       fileName: _jsxFileName,

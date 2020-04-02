@@ -181,7 +181,10 @@ a:link {
 
 .title___2_B4Q {
   text-align: center;
-  padding: 30px; }
+  padding: 30px;
+  font-size: 55px;
+  color: seashell;
+  font-stretch: semi-expanded; }
 
 html,
 body {
